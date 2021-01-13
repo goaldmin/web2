@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title>Who are you?</title>
+  </head>
+  <body>
+    <h1>Who are you?</h1>
+    <h2>Tell us who you are!</h2>
+    <form action="response.html" method="POST">
+    <section class="name">
+      <label for="name">What is your name?</label>
+      <input type="text" id="name" name="name">
+    </section>
+    <section class="age">
+      <label for="age">How old are you?</label>
+      <input type="number" id=age name=age step="1">
+    </section>
+    <section class="coding">
+      <label for="coding">Do you like coding?</label>
+      <span>No:(</span>
+      <input type="range" id="coding" name="coding" min="0" max="5" step="1">
+      <span>Yes:)</span>
+    </section>
+    <section class="season">
+      <span>What season do you like?</span><br>
+      <input type="checkbox" id="spring" name="season" value="spring">
+      <label for="spring">Spring</label>
+      <input type="checkbox" id="summer" name="season" value="summer">
+      <label for="summer">Summer</label>
+      <input type="checkbox" id="fall" name="season" value="fall">
+      <label for="fall">fall</label>
+      <input type="checkbox" id="winter" name="season" value="winter">
+      <label for="winter">winter</label>
+    </section>
+    <section class="mint">
+      <span>Do you like mint?</span>
+      <input type="radio" id="yes" name="mint" value="yes">
+      <label for="yes">Yes</label>
+      <input type="radio" id="no" name="mint" value="no">
+      <label for="no">NO</label>
+    </section>
+    <section class="country">
+      <label for="country">Where do you live?</label>
+      <select name="country" id="country">
+        <option value="Korea">Korea</option>
+        <option value="Japan">Japan</option>
+        <option value="U.S.A.">U.S.A.</option>
+        <option value="U.K.">U.K.</option>
+        <option value="Vietnam">Vietnam</option>
+      </select>
+    </section>
+    <section class="submit">
+      <input type="submit" value="Submit!">
+    </section>
+  </form>
+</html>
